@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace Platformer
 {
-    public class DangerousInitSystem : IEcsInitSystem
+    public class DangerousInitSystem : IEcsRunSystem
     {
-        public void Init(EcsSystems ecsSystems)
+        public void Run(EcsSystems ecsSystems)
         {
             var ecsWorld = ecsSystems.GetWorld();
             var dangerousPool = ecsWorld.GetPool<DangerousComponent>();

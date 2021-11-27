@@ -19,6 +19,7 @@ namespace Platformer
                 ref var playerInputComponent = ref playerInputPool.Get(entity);
 
                 playerComponent.playerRB.AddForce(playerInputComponent.moveInput * playerComponent.playerSpeed, ForceMode.Acceleration);
+                
             }
             
         }

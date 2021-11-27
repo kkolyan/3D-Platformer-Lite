@@ -5,7 +5,14 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "5fa7d7a94d912ac7c16f2500eefc12adc926f9b8"
+      "hash": "d5510569be1a8cf9f672a8f50e7b2f39122238c2"
+    },
+    "com.leopotam.ecslite.extendedsystems": {
+      "version": "https://github.com/Leopotam/ecslite-extendedsystems.git#develop",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ed886e15124f8a296446e080c12a42d281910872"
     },
     "com.leopotam.globals": {
       "version": "https://github.com/Leopotam/globals.git",
@@ -13,6 +20,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "740d6ddbd9ed39947f2153c63bc2654d04e5b8c8"
+    },
+    "com.nplekhanov.csx.leohot": {
+      "version": "https://github.com/kkolyan/leohot.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f470208ad77a6311681e7e87ed6b917b6feb5fe6"
     },
     "com.unity.collab-proxy": {
       "version": "1.3.9",

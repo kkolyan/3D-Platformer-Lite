@@ -1,5 +1,11 @@
-# 3D Platformer
-This is a simple example of a 3D platformer game on Unity engine using Entity Component System (ECS) implementation by Leopotam (LeoECS lite).
-# Screenshots
-![alt text](https://i.ibb.co/hm7Lrm4/Platformer.png)
-![alt text](https://i.ibb.co/ZL7fgrm/Platformer.png)
+# About
+
+Hot-reload-enabled modification of the [3D-Platformer-Lite](https://github.com/supremestranger/3D-Platformer-Lite).
+
+The purpose of this fork is to proof that [leohot](https://github.com/kkolyan/leohot) (Unity hot-reload extension for LeoECS Lite) works.
+
+# Modifications
+
+Slight refactoring that at most allow to use hot-reload extension properly: some init-systems split into two, 
+because with hot-reload there are two "init" phases - one that initializes game state and run only once, 
+and one that initializes miscellaneous things and should be run after each hot-reload.

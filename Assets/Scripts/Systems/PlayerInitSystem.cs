@@ -1,4 +1,5 @@
-﻿using Leopotam.EcsLite;
+﻿using System;
+using Leopotam.EcsLite;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,16 +11,19 @@ namespace Platformer
         public void Init(EcsSystems ecsSystems)
         {
             var ecsWorld = ecsSystems.GetWorld();
+
+            EcsFilter playerFilter = ecsWorld.Filter<PlayerComponent>().End();
+
+            int playerEntity = -1;
+            foreach (int i in playerFilter) playerEntity = i;
+            if (playerEntity < 0)
+            {
+                throw new Exception("player not found"); 
+            }
             var gameData = ecsSystems.GetShared<GameData>();
 
-            var playerEntity = ecsWorld.NewEntity();
-
             var playerPool = ecsWorld.GetPool<PlayerComponent>();
-            playerPool.Add(playerEntity);
             ref var playerComponent = ref playerPool.Get(playerEntity);
-            var playerInputPool = ecsWorld.GetPool<PlayerInputComponent>();
-            playerInputPool.Add(playerEntity);
-            ref var playerInputComponent = ref playerInputPool.Get(playerEntity);
 
             var playerGO = GameObject.FindGameObjectWithTag("Player");
             playerGO.GetComponentInChildren<GroundCheckerView>().groundedPool = ecsSystems.GetWorld().GetPool<GroundedComponent>();

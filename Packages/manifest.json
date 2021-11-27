@@ -40,6 +40,8 @@
         "com.unity.modules.wind": "1.0.0",
         "com.unity.modules.xr": "1.0.0",
         "com.leopotam.ecslite": "https://github.com/Leopotam/ecslite.git#develop",
-        "com.leopotam.globals": "https://github.com/Leopotam/globals.git"
+        "com.leopotam.globals": "https://github.com/Leopotam/globals.git",
+        "com.leopotam.ecslite.extendedsystems": "https://github.com/Leopotam/ecslite-extendedsystems.git#develop",
+        "com.nplekhanov.csx.leohot": "https://github.com/kkolyan/leohot.git"
     }
 }
