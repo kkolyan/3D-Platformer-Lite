@@ -2,7 +2,7 @@
 
 Hot-reload-enabled modification of the [3D-Platformer-Lite](https://github.com/supremestranger/3D-Platformer-Lite).
 
-The purpose of this fork is to proof that [leohot](https://github.com/kkolyan/leohot) (Unity hot-reload extension for LeoECS Lite) works.
+The purpose of this fork is to proof that [leohot](https://github.com/kkolyan/leohot) (Unity hot-reload extension for [LeoECS Lite](https://github.com/Leopotam/ecslite)) works.
 
 # Modifications
 
